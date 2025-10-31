@@ -1,0 +1,91 @@
+
+#switch case code here
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int choice;
+    double time, distance;
+    const double carbonDioxide = 258.0, air = 331.5, helium = 972.0, hydrogen = 1270.0;
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int choice;
+    double time, distance;
+    const double carbonDioxide = 258.0, air = 331.5, helium = 972.0, hydrogen = 1270.0;
+
+    cout << "Speed of Sound in Gases\n";
+    cout << "1. Carbon 
+
+    cout << "2. Air\n";
+    cout << "3. Helium\n";
+    cout << "4. Hydrogen\n";
+    cout << "Enter your choice (1-4): ";
+    cin >> choice;
+
+    if (choice >= 1 && choice <= 4) {
+        cout << "Enter time (seconds): ";
+        cin >> time;
+
+        if (time < 0 || time > 30) {
+            cout << "Error: Time must be between 0 and 30 seconds.";
+            return 0;
+        }
+
+        if (choice == 1)
+
+    cout << "Speed of Sound in Gases\n";
+    cout << "1. Carbon Dioxide\n";
+    cout << "2. Air\n";
+    cout << "3. Helium\n";
+    cout << "4. Hydrogen\n";
+    cout << "Enter your choice (1-4): ";
+    cin >> choice;
+
+    if (choice >= 1 && choice <= 4) {
+        cout << "Enter time (seconds): ";
+        cin >> time;
+
+        if (time < 0 || time > 30) {
+            cout << "Error: Time must be between 0 and 30 seconds.";
+            return 0;
+        }
+
+        switch (choice) {
+            case 1:
+                distance = carbonDioxide * time;
+                cout << "Gas: Carbon Dioxide\n";
+                break;
+            case 2:
+                distance = air * time;
+                cout << "Gas: Air\n";
+                break;
+            case 3:
+                distance = helium * time;
+                cout << "Gas: Helium\n";
+                break;
+            case 4:
+                distance = hydrogen * time;
+                cout << "Gas: Hydrogen\n";
+                break;
+        }
+
+        cout << fixed << setprecision(2);
+        cout << "Distance: " << distance << " meters\n";
+    } 
+    else {
+        cout << "Invalid input! Please choose between 1 and 4.";
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
